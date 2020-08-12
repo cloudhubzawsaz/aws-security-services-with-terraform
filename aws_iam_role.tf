@@ -1,4 +1,4 @@
-resource "aws_iam_role" "ci-test-iam-role" {
+resource "aws_iam_role" "CI-test-iam-role" {
   name = "ci_tests_role"
 
   assume_role_policy = <<EOF

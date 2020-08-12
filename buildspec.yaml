@@ -38,4 +38,4 @@ phases:
   post_build:
     commands:
       - terraform $TF_COMMAND2 -auto-approve
-      - echo terraform $TF_COMMAND completed on `date`
+      - echo terraform $TF_COMMAND2 completed on `date`

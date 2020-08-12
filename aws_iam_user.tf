@@ -1,5 +1,5 @@
 resource "aws_iam_user" "lb" {
-  name = "loadbalancers"
+  name = "loadbalancer"
   path = "/system/"
 
   tags = {

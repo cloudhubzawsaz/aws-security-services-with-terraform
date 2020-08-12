@@ -1,5 +1,5 @@
 resource "aws_iam_role" "ci-test-iam-role" {
-  name = "ci_test_role"
+  name = "ci_tests_role"
 
   assume_role_policy = <<EOF
 {

@@ -31,8 +31,11 @@ phases:
   build:
     commands:
 #       - terraform $TF_COMMAND -auto-approve
-       - terraform plan
+       - terraform $TF_COMMAND -auto-approve
+       - echo terraform $TF_COMMAND completed on `date`
+
 
   post_build:
     commands:
-      - echo terraform plan completed on `date`
+      - terraform $TF_COMMAND2 -auto-approve
+      - echo terraform $TF_COMMAND completed on `date`
